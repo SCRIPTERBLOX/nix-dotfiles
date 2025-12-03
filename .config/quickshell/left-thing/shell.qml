@@ -4,6 +4,8 @@ import Quickshell
 PanelWindow {
   id: panel
   height: 32
+
+  implicitWidth: 70
   
   anchors {
     top: true
@@ -12,26 +14,43 @@ PanelWindow {
   }
 
   margins {
-    left: 6
-    top: 5
     bottom: 5
   }
 
-  // Fake border
   Rectangle {
-    color: "#004687"
+    color: "#0f0029"
+    //color: "#ff0000"
     anchors.fill: parent
-    border.color: "#00ffd2"     // Border color
-    border.width: 2          // Border thickness
-    radius: 0                // Keep square edges for a panel
 
-    // Actual panel content goes inside THIS layer
-    Row {
+    width: 58
+    height: 20
+
+    Column {
       anchors.fill: parent
-      anchors.margins: 2   // So the content doesn’t overlap the border
-      spacing: 8
+      leftPadding: 6
+      topPadding: 5
 
-      // ... your widgets ...
+      spacing: 6
+
+      Rectangle {
+        color: "#004687"
+	width: 60
+	height: 60
+
+	border.color: "#00ffd2"
+        border.width: 2
+        radius: 0
+      }
+
+      Rectangle {
+        color: "#004687"
+	width: 60
+	height: 60
+
+	border.color: "#00ffd2"
+        border.width: 2
+        radius: 0
+      }
     }
   }
 }
