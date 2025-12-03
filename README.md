@@ -1,5 +1,3 @@
-# Because I am an idiot and wanted to use symlinks for my dotfiles currently it doesnt work
-
 # Nix Config
 
 My personal nix config
