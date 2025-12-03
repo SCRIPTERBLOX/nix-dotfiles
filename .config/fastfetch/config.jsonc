@@ -1,0 +1,75 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "padding": {
+            "top": 2
+        }
+    },
+    "modules": [
+	{
+		"keyColor": "38;2;0;100;0",
+		"type": "custom",
+		"format": "\u001b[94m┌───────────┐"
+	},
+	{
+		"type": "custom",
+		"format": "\u001b[94m│ \u001b[96mNixOS btw \u001b[94m│"
+	},
+	{
+		"type": "custom",
+		"format": "\u001b[94m└───────────┘"
+	},
+	"break",
+
+	{
+		"type": "custom",
+		"format": "\u001b[94m┌───────────────┐"
+	},
+	{
+		"keyColor": "blue",
+		"type": "command",
+		"key": "\u001b[94m│ Linux",
+		"text": "echo \"$(uname -r) \u001b[94m│\""
+	},
+	{
+		"type": "custom",
+		"format": "\u001b[94m├───────────────┴────────────┐"
+	},
+	{
+		"type": "wm",
+		"key": "\u001b[94m│"
+	},
+	{
+		"type": "custom",
+		"format": "\u001b[94m└────────────────────────────┘"
+	},
+
+	"break",
+
+	{
+		"type": "custom",
+		"format": "\u001b[94m┌──────────────────────────────────────────────┐"
+	},
+	{
+		"type": "custom",
+		"format": "\u001b[94m│    12th Gen Intel i5-12400F (6) @ 5.6 GHz    │"
+	},
+	{
+		"type": "command",
+		"key": "\u001b[94m│",
+		"text": "echo \"\u001b[94m$(lspci | grep -Ei 'vga|3d|display' | cut -d ':' -f3 | sed 's/(.*)//' | xargs) │\""
+	},
+	{
+		"type": "command",
+		"key": "\u001b[94m│",
+		"text": "echo \"               \u001b[94m$(free -m | awk '/Mem:/ {printf \"%.2f/%.2f Gib\", $3/1024, $2/1024 \"\"}')               │\""
+	},
+	{
+		"type": "custom",
+		"format": "\u001b[94m└──────────────────────────────────────────────┘"
+	},
+        //"sound",
+        "break",
+        "colors"
+    ]
+}

@@ -1,1 +1,9 @@
-/home/scripterblox/.config/kdeglobals
+[KDE]
+ShowDeleteCommand=false
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
+
+[General]
+TerminalApplication=kitty
